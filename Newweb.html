@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title> My CSS Website</title>
+    
+    <link rel="stylesheet" href="style.css">
+    </head>
+<body>
+    <nav>
+    <ul class="topnav" id="dropdownClick">
+        <li><a href="#home">Home
+            </a></li>
+        <li><a href="#phone">Phone
+            </a></li>
+        <li><a href="#Contact">Contact
+            </a></li>
+        <li><a href="#About">About
+            </a></li>
+        <li class="topnav-right"><a href="#signup">SignUp
+            </a></li>
+        <li class="topnav-right"><a href="#sign in">SignIn
+            </a></li>
+        <li class="dropdownIcon"><a href="javaScript:void(0)" onClick="dropdownMenu()">&#9776;</a></li>
+        
+        </ul>
+    
+    
+    </nav>
+    
+    <script>
+        function dropdownMenu(){
+            var x=document.getElementById("dropdownClick");
+        if(x.className=="topnav"){
+             x.className+="responsive";
+                   
+            }  
+        else{
+            x.className="topnav";
+        }
+        }
+    
+    </script>
+    </body>
+
+
+
+</html>
